@@ -35,13 +35,11 @@ public class AvaliadorTest {
 		Leilao leilao = new CriadorDeLeilao().para("Playstation 3 Novo").constroi();
 		
 		leiloeiro.avalia(leilao);
-		
 	}
 	
     @Test
     public void deveEntenderLancesEmOrdemCrescente() {
         // parte 1: cenario
-         
         Leilao leilao = new Leilao("Playstation 3 Novo");
          
         leilao.propoe(new Lance(joao, 250.0));
